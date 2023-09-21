@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "@techniquesoftware/component-library": "git+ssh://git@github.com/TechniqueSoftware/clubOS-lib.git#RELEASE_XXXXXXXX-938"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
