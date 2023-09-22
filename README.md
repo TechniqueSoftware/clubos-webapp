@@ -1,5 +1,7 @@
 # React + Vite
 
+This repository serves as the parent webapp over technique-web, clubOS-lib, clubos-ui-components, and ASF(?)
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
