@@ -1,0 +1,41 @@
+#root {
+  min-height: 100vh;
+  width: 100%;
+}
+
+#layout-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#layout-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+#content-container {
+  width: 100%;
+}
+
+#top-navbar {
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.25);
+  min-height: 71px;
+  width: 100%;
+  z-index: 200;
+}
+
+#side-navbar {
+  border-right: 1px solid #eeeeff;
+  display: flex;
+  height: calc(100vh - 71px);
+  padding: 3px 0;
+  width: 165px;
+  z-index: 200;
+}
+
+#app-iframe {
+  height: calc(100vh - 71px);
+  width: 100%;
+}
