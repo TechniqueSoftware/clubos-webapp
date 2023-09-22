@@ -1,8 +1,7 @@
 branches:
   only:
   - main
-  - "/^RELEASE.*$/"
-language: java
+language: node_js
 before_install:
 - pushd ~ && curl https://s3.amazonaws.com/clubos-deploy/travis-ci/m2.tar.gz | tar
   xvz && popd
