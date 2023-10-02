@@ -36,6 +36,7 @@
 }
 
 #app-iframe {
+  border: 0;
   height: calc(100vh - 71px);
   width: 100%;
 }
