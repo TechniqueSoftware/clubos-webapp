@@ -7,8 +7,14 @@ import './index.css'
 const root = createRoot(document.getElementById('root'))
 const router = createBrowserRouter([
   {
-    path: '*',
-    element: <App />
+    path: '/',
+    element: <App />,
+    children: [
+      {
+        path: '*',
+        element: <App />,
+      }
+    ]
   }
 ])
 
