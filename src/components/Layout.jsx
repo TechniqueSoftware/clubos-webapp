@@ -1,10 +1,10 @@
 import { render } from '@techniquesoftware/component-library/dist/esm/index'
 import { useEffect } from 'react'
 
-export default function Layout({ iframeUrl, setIframeUrl }) {
+export default function Layout({ children, handleIframeUrl }) {
   useEffect(() => {
     render.topNavbar({ id: 'top-navbar' })
-    render.sideNavbar({ id: 'side-navbar', props: { setIframeUrl } })
+    render.sideNavbar({ id: 'side-navbar', props: { handleIframeUrl } })
   }, [])
 
   return (
@@ -13,7 +13,7 @@ export default function Layout({ iframeUrl, setIframeUrl }) {
       <div id='layout-container'>
         <nav id='side-navbar' />
         <div id='content-container'>
-          <iframe id='app-iframe' src={iframeUrl} />
+          {children}
         </div>
       </div>
     </div>
