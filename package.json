@@ -12,9 +12,10 @@
     "deploy-elastic-beanstalk": "node scripts/deployElasticBeanstalk.js"
   },
   "dependencies": {
+    "@techniquesoftware/component-library": "git+ssh://git@github.com/TechniqueSoftware/clubOS-lib.git#RELEASE_IFRAME_URL-1001",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "@techniquesoftware/component-library": "git+ssh://git@github.com/TechniqueSoftware/clubOS-lib.git#RELEASE_IFRAME_URL-996"
+    "react-router-dom": "^6.16.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
