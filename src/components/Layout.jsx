@@ -1,5 +1,6 @@
 import { render } from '@techniquesoftware/component-library/dist/esm/index'
 import { useEffect } from 'react'
+import { Helmet } from 'react-helmet'
 
 export default function Layout({ children, handleIframeUrl }) {
   useEffect(() => {
@@ -8,6 +9,10 @@ export default function Layout({ children, handleIframeUrl }) {
   }, [])
 
   return (
+    <>
+    <Helmet>
+      <title>{window.sessionStorage.getItem('pageTitle')}</title>
+    </Helmet>
     <div id='layout-wrapper'>
       <header id='top-navbar' />
       <div id='layout-container'>
@@ -17,5 +22,6 @@ export default function Layout({ children, handleIframeUrl }) {
         </div>
       </div>
     </div>
+    </>
   )
 }

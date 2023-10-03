@@ -15,6 +15,7 @@
     "@techniquesoftware/component-library": "git+ssh://git@github.com/TechniqueSoftware/clubOS-lib.git#RELEASE_IFRAME_URL-1001",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
     "react-router-dom": "^6.16.0"
   },
   "devDependencies": {
