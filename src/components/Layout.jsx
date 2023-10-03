@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 
 export default function Layout({ children, handleIframeUrl }) {
   useEffect(() => {
-    render.topNavbar({ id: 'top-navbar' })
+    render.topNavbar({ id: 'top-navbar', props: { handleIframeUrl } })
     render.sideNavbar({ id: 'side-navbar', props: { handleIframeUrl } })
   }, [])
 
