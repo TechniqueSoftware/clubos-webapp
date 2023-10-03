@@ -3,7 +3,9 @@ import { useEffect } from "react"
 export default function useReadIframeUrl() {
   const readIframeUrl = e => {
     if (e.data) {
-      window.history.pushState({}, null, e.data)
+
+      localStorage.setItem('pageTitle', JSON.parse(e.data).title)
+      window.history.pushState({}, null, JSON.parse(e.data).URL)
     }
   }
 
