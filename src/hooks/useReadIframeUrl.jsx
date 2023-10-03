@@ -4,7 +4,7 @@ export default function useReadIframeUrl() {
   const readIframeUrl = e => {
     if (e.data) {
 
-      localStorage.setItem('pageTitle', JSON.parse(e.data).title)
+      sessionStorage.setItem('pageTitle', JSON.parse(e.data).title)
       window.history.pushState({}, null, JSON.parse(e.data).URL)
     }
   }
