@@ -1,11 +1,12 @@
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 
 export default function useReadIframeUrl() {
+  const [pageTitle, setPageTitle] = useState('Club OS')
   const readIframeUrl = e => {
     if (e.data) {
-
-      sessionStorage.setItem('pageTitle', JSON.parse(e.data).title)
-      window.history.pushState({}, null, JSON.parse(e.data).URL)
+      const { title, path } = JSON.parse(e.data)
+      setPageTitle(title)
+      window.history.pushState({}, null, path)
     }
   }
 
@@ -16,5 +17,5 @@ export default function useReadIframeUrl() {
     }
   }, [])
 
-  return null
+  return { pageTitle }
 }

@@ -8,7 +8,7 @@ import './App.css'
 export default function App() {
   const [iframeUrl, setIframeUrl] = useState(IFRAME_DOMAIN)
   const location = useLocation()
-  useReadIframeUrl()
+  const { pageTitle } = useReadIframeUrl()
 
   const handleIframeUrl = ({ pathname, search = '' }) => {
     const url = IFRAME_DOMAIN + pathname + search
@@ -20,7 +20,7 @@ export default function App() {
   }, [location])
 
   return (
-    <Layout handleIframeUrl={handleIframeUrl}>
+    <Layout handleIframeUrl={handleIframeUrl} pageTitle={pageTitle}>
       <iframe id='app-iframe' src={iframeUrl} />
     </Layout>
   )
