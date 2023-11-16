@@ -1,4 +1,3 @@
-
 <!--- Provide a general summary of your changes in the Title above -->
 # clubos-webapp pr template
 ### Description of work
@@ -20,29 +19,20 @@
 - [ ] I have built and compiled my code. 
 - [ ] I have reviewed the acceptance criteria in my ticket. I have made sure that all criteria are being addressed. 
 - [ ] I have annotated my changes where needed.(Pointing out areas of the code that need more attention or where you were less certain about decisions.)
-- [ ] I have checked my code for typos and made sure there are no misspellings.
-- [ ] I have checked my code for white space issues (extra spaces, indention, etc).
-- [ ] I have removed any commented out code in areas I was working.
-- [ ] I have removed any unused imports/variables/functions in areas I was working.
-- [ ] I validate that my code follows the Club OS style guidelines ([Style Guide](https://clubos.atlassian.net/wiki/spaces/ENG/pages/699105542/Developer+Onboarding#DeveloperOnboarding-UseGoogle'sJavastyleguide "Style Guide")).
-- [ ] I have added the appropriate logging and removed test logging ([More on Logging](https://github.com/TechniqueSoftware/clubos-documentation/blob/master/Development/Java/Logging.md "More on Logging")).
+- [ ] I have checked my code for typos, white space issues, unused imports/variables/functions, and extra commented-out code.
+- [ ] I have added the appropriate logging/comments and removed test logging ([More on Logging](https://github.com/TechniqueSoftware/clubos-documentation/blob/master/Development/Java/Logging.md "More on Logging")).
 - [ ] I do not have any * imports.
-- [ ] I have added comments only where needed and if it outlines specific business logic.
-- [ ] I have not used an auto-formatter (These alter commit history)
+- [ ] I have not used an auto-formatter aside from the built-in eslint (These alter commit history)
 
-### Automated tests
+### Tests
 - [ ] My changes can not or do not need to be tested (Explain why in the pull request).
-- [ ] I have added tests to cover my changes.
-- [ ] I have taken care to cover edge cases in my tests.
-- [ ] My changes passed any existing linting tests.
+- [ ] I have added proper testing to cover my changes.
+- [ ] My changes passed any existing linting, unit, snapshot, or automation tests.
 - [ ] All new and existing tests passed.
 
 ## Reviewer Checklist
 <!--- Go over all the following points, and put an `x` in all the boxes that apply. -->
-- [ ] Is the code testable?
 - [ ] Does the code have tests?
-- [ ] Is the code following Club OS style guidelines?
-- [ ] Is the appropriate logging in place?
-- [ ] Do variable and method names make sense and are appropriate? 
-- [ ] Is there any unused or unnecessary code that can be removed (unused methods/imports, debug logging, etc)?
-- [ ] I have provided feedback via Github comments.
+- [ ] Is there excess logging or commenting of code?
+- [ ] Are variable and function names logical? 
+- [ ] I have provided feedback via Github comments if needed.
